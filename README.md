@@ -27,7 +27,7 @@ author: dstrockis
 
 从你的shell或者命令行：
 
-***git clone https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect.git***
+	git clone https://github.com/wacn-samples/active-directory-dotnet-webapp-openidconnect.git
 
 ### 第二步： 在你的Azure Active Directory租户中创建一个用户账号
 
