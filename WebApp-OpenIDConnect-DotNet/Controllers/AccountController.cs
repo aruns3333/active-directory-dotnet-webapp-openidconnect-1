@@ -20,7 +20,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-// The following using statements were added for this sample.
+// 下面的using语法是为示例添加的
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OpenIdConnect;
 using Microsoft.Owin.Security;
@@ -31,7 +31,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
     {
         public void SignIn()
         {
-            // Send an OpenID Connect sign-in request.
+            // 发送OpenID Connect登录请求.
             if (!Request.IsAuthenticated)
             {
                 HttpContext.GetOwinContext().Authentication.Challenge(new AuthenticationProperties { RedirectUri = "/" }, OpenIdConnectAuthenticationDefaults.AuthenticationType);
@@ -39,7 +39,7 @@ namespace WebApp_OpenIDConnect_DotNet.Controllers
         }
         public void SignOut()
         {
-            // Send an OpenID Connect sign-out request.
+            // 发送OpenID Connect登出请求.
             HttpContext.GetOwinContext().Authentication.SignOut(
                 OpenIdConnectAuthenticationDefaults.AuthenticationType, CookieAuthenticationDefaults.AuthenticationType);
         }
