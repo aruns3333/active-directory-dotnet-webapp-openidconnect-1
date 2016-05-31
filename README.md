@@ -77,7 +77,7 @@ author: dstrockis
  ClaimsPrincipal.Current。
 - ASP.Net OWIN中间件整合session cookie来建立用户会话。
 
-你可以在类或者方法上打上`[Authorize]`特征来触发中间件发送OpenID Connect登录请求，或者发起质询，
+你可以在类或者方法上打上`[Authorize]`特性来触发中间件发送OpenID Connect登录请求，或者发起质询，
 
 	C#
 	HttpContext.GetOwinContext().Authentication.Challenge(
