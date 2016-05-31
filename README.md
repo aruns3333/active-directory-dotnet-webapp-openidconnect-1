@@ -75,7 +75,7 @@ author: dstrockis
 - 下载Azure AD元数据，找到签名密钥，然后找到租户颁发者名字。
 - 通过传入的JWT验证签名和颁发者来处理OpenID Connect登录连接响应，提取用户的要求，然后把他们放在
  ClaimsPrincipal.Current。
-- ASP.Net OWIN中间件整合session cookie来建议用户会话。
+- ASP.Net OWIN中间件整合session cookie来建立用户会话。
 
 你可以在类或者方法上打上`[Authorize]`特征来触发中间件发送OpenID Connect登录请求，或者发起质询，
 
