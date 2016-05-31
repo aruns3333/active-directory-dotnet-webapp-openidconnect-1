@@ -111,7 +111,7 @@ author: dstrockis
 9. 在 `Views` --> `Shared`文件夹中创建一个局部视图`_LoginPartial.cshtml`，然后使用示例中的代码来替代其中的内容。
 10. 使用示例中 `_Layout.cshtml`的内容来替换`Views` --> `Shared`文件夹中 `_Layout.cshtml`的内容。更有效的，可以添加一行来实现同样的效果，`@Html.Partial("_LoginPartial")`，我们在之前添加的`_LoginPartial`视图已经实现了。
 11. 创建一个新的空controller命名为`AccountController`，使用示例中相同文件中的内容来实现它。
-12. 如果你希望用户在看到程序中的任何页面时去登录，那么在`HomeController`这个类上放置 `[Authorize]`特征。如果你没有做这项工作，用户就不需要登陆也能看到程序的主页，然后能通过页面中sign-in的链接来登录。
+12. 如果你希望用户在看到程序中的任何页面前去登录，那么在`HomeController`这个类上放置 `[Authorize]`特性。如果你没有做这项工作，用户就不需要登陆也能看到程序的主页，然后能通过页面中sign-in的链接来登录。
 13. 差不多完成了！参考上面“运行示例”的步骤在AAD租户注册程序。
 14. 在`web.config`的 `<appSettings>`节点下创建`ida:ClientId`, `ida:AADInstance`, `ida:Tenant`, 和 `ida:PostLogoutRedirectUri`这些键，并赋予对应的值。在中国版Azure AD，`ida:AADInstance`的值是`https://login.chinacloudapi.cn/{0}`。
 
