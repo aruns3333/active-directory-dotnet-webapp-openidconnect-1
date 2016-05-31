@@ -19,7 +19,7 @@ author: dstrockis
 
 - Visual Studio 2013
 - 连接互联网
-- 一个Azure的订阅（免费的订阅就足够）
+- 一个Azure的订阅（如果您还没有Azure订阅，请点击此处申请试用的订阅账号）
 
 每一个Azure订阅都有一个相关联的Azure Active Directory租户。如果你还没有Azure订阅，你可以在[https://www.azure.cn/](https://www.azure.cn/)注册一个免费的订阅。这个示例使用到的Azure AD的所有功能都是免费的。
 
